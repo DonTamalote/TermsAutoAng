@@ -1,0 +1,423 @@
+<div class="container">
+  <h4 style="text-align: center;">Generador de Aviso de Privadidad y Terminos y Condiciones Online Para Tiendas Ecommerce</h4><br>
+  <p>
+    Bienvenido al generador online, solo rellena los campos correspondientes a tu empresa y tienda en linea, estos se rellenarán automáticamente en los textos. Una vez que los campos esten llenos, solo da click en cualquiera de las dos columnas que necesites, copia el texto y listo ;).
+  </p>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Empresa</label>
+          <input [(ngModel)]="empresa" name="Empresa" type="text" class="form-control" id="inputEmail4" placeholder="E.j. WeCommerce">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Titular de la empresa</label>
+          <input [(ngModel)]="titular" name="Titular" type="text" class="form-control" id="inputPassword4" placeholder="Nombre Comlpeto">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">Sitio Web</label>
+          <input [(ngModel)]="sitio" name="Sitio Web" type="text" class="form-control" id="inputEmail4" placeholder="E.j. www.wecommerce.mx">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Correo de Ventas</label>
+          <input [(ngModel)]="correov" name="Correo Ventas" type="text" class="form-control" id="inputPassword4" placeholder="E.j. ventas@wecommerce.mx">
+        </div>
+      </div>
+    </form>
+<div class="form-group">
+  <label for="inputAddress2">Dirección</label>
+  <input [(ngModel)]="direccion" name="Direccion" type="text" class="form-control" id="inputAddress2" placeholder="Colonia, calle y número exterior o interior">
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="inputCity">Municipio</label>
+    <input [(ngModel)]="municipio" name="Municipio" type="text" class="form-control" id="inputCity" placeholder="E.j. Culuacán">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputState">Estado</label>
+    <input [(ngModel)]="estado" name="Estado" type="text" class="form-control" id="inputState" placeholder="E.j. Sinaloa">
+  </div>
+  <div class="form-group col-md-4">
+    <label for="inputCountry">País</label>
+    <input [(ngModel)]="pais" name="Pais" type="text" class="form-control" id="inputCountry" placeholder="E.j. México">
+  </div>
+  <div class="form-group col-md-2">
+    <label for="inputZip">C.P.</label>
+    <input [(ngModel)]="cp" name="Codigo Postal" type="text" class="form-control" id="inputZip" placeholder="Código Postal">
+  </div>
+</div>
+</div>
+<div class="modal-body row">
+  <div class="col-md-6">
+    <!-- Primera columna empieza aqui -->
+    <h3 style="text-align: center;">Aviso de Privacidad</h3><br>
+    <div class="container" style="user-select: all;">
+      <p>
+        {{titular}} en lo sucesivo el “Responsable”, con nombre comercial “{{empresa}}”, con domicilio en {{direccion}}, {{municipio}}, {{estado}}, {{pais}}, C.P {{cp}}, expide el presente Aviso de Privacidad, para que el Titular de los datos personales, de ahora en adelante denominado “Titular”, tenga conocimiento del trato que el Responsable les da a los Datos Personales.<br>
+        <br>
+        El Aviso de Privacidad presente hace referencia y aplicación al sitio web {{sitio}} señalado en el mismo.<br>
+        <br>
+        El Titular reconoce que la información proporcionada sobre sí mismo es verdadera, correcta, actual y completa, responsabilizándose civil y penalmente de dicha información.<br>
+        <br>
+        La información de los titulares o los medios de comunicación entre los titulares y el Responsable puede ser de manera verbal, escrita, medios electrónicos, óptica y de otra tecnología como correo postal, Internet o vía telefónica.<br>
+        <br>
+        Para efectos del presente Aviso de Privacidad, existen distintos tipos de Titulares, en cada uno de los tipos de titulares serán distintos los Datos Personales recabados y las finalidades del tratamiento de los mencionados. Los tipos de titulares serán los siguientes:<br>
+        <br>
+        Titulares Usuarios en Entorno digital.<br>
+        Titulares de relación Esporádica.<br>
+        El Titular Usuario en Entorno Digital, es aquel que proporciona sus datos personales para contratar los Servicios que presta el Responsable en un entorno Digital, a través de su Página de Internet ({{sitio}}) o en la Aplicación informática del Responsable, en lo sucesivo y en conjunto, la “Página”, “Página de Internet”, sitio “Web” o “Sitio”.<br>
+        <br>
+        Los Datos Personales que recaba el Responsable de los Titulares son:<br>
+        <br>
+        Datos de Identificación.<br>
+        Datos de Contacto y Ubicación.<br>
+        Datos Fiscales.<br>
+        Datos Financieros.<br>
+        Los Datos Personales se proporcionan a través la creación de una Cuenta, el Registro de Usuario o el proceso de compra del sitio web. El Responsable recaba información de identificación personal que es cedida voluntariamente por el Usuario, o en respuesta a requerimientos explícitos por parte del Responsable.<br>
+        <br>
+        El Responsable no recaba datos personales sensibles en el entorno digital.<br>
+        <br>
+        <strong>Finalidades del Tratamiento</strong><br>
+        Finalidades Originarias: La Información Personal es recabada, utilizada y almacenada para prestar los servicios que se encuentran a disposición del Titular por el entorno digital en razón de una relación jurídica o intento de establecimiento de la misma, a solicitud del propio titular; integrar los expedientes necesarios para la prestación del servicio; y de igual forma, para exigir el cumplimiento de obligaciones y de pago, todas las finalidades anteriores son esenciales para la celebración de la Relación Jurídica, o bien, para la atención a la solicitud del Titular.<br>
+        <br>
+        Finalidades Secundarias: Se utilizan con fines estadísticos, ofrecer y promover productos y enviar diversas promociones.<br>
+        <br>
+        En caso que no desee que se le de tratamiento de sus datos para las Finalidades Secundarias, por favor mandar un correo electrónico con el asunto “Negativa Finalidades Secundarias” al correo electrónico {{correov}}.<br>
+        <br>
+        El Responsable se reserva el derecho de solicitar algún comprobante y/o dato adicional a efecto de corroborar los datos personales de cada Usuario, así como de suspender temporal o definitivamente a aquellos Usuarios cuyos datos no hayan podido ser confirmados.<br>
+        <br>
+        El Usuario reconoce que la cuenta o Registro de Usuario es personal, única e intransferible, y está prohibido que un mismo Usuario inscriba o posea más de una cuenta. En caso que la Responsable detecte distintas cuentas que contengan datos coincidentes o relacionados, podrá cancelar, suspender o inhabilitarlas. El Usuario será responsable por todas las operaciones efectuadas en su cuenta, pues el acceso a la misma está restringido al ingreso y uso de su contraseña personal, de conocimiento exclusivo del Usuario. En caso que la cuenta sea suspendida, el Responsable almacenará los datos personales del Usuario, a efecto que el Usuario y la Empresa seguirán sujetos a lo señalado en el presente Aviso de Privacidad.<br>
+        <br>
+        En caso dado de que la información del Usuario al momento de la inscripción estuviese equivocada o incompleta, siendo que se imposibilite la comprobación e identificación del Usuario, el Responsable tendrá el derecho de suspender inmediatamente la prestación de los Servicios por medio de la Página de Internet, sin necesidad de previo aviso, responsabilizándose en todo momento el Usuario por las pérdidas y daños finalmente sufridos.<br>
+        <br>
+        <strong>Titulares de relación Esporádica.</strong><br>
+        Son aquellos titulares con los que el Responsable se relaciona para actos esporádicos, de carácter jurídico o no jurídico.<br>
+        <br>
+        Los datos recabados para estos Titulares serían las siguientes:<br>
+        <br>
+        Datos de Identificación.<br>
+        Datos de Contacto.<br>
+        Datos Laborales.<br>
+        Datos Fiscales.<br>
+        Datos Académicos.<br>
+        <strong>Finalidades del Tratamiento de sus Datos Personales.</strong><br>
+        Finalidades Originarias: La Información Personal es recabada y almacenada para fines de identificación y certeza del Titular, además, se utilizan con fines de localización, capacitación, orientación, contacto, atención a solicitudes, envío de promociones, estadísticos de control, postular ofertas laborales y seguridad interna del Responsable. Finalidades Secundarias: Estadísticos, recibir candidaturas laborales o de servicios, ofrecer puesto de trabajo o de servicios, ofrecer y promover servicios.<br>
+        <br>
+        En caso que no desee que se le de tratamiento de sus datos para las Finalidades Secundarias, por favor mandar un correo electrónico con el asunto “Negativa Finalidades Secundarias” al correo electrónico {{correov}}.<br>
+        <br>
+        <strong>Disociación</strong><br>
+        El Responsable, de acuerdo a lo contemplado en las Políticas de Privacidad del Responsable y conforme a lo estipulado en el artículo 10 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, somete a un proceso de disociación aquellos datos incompletos o aislados que no pueden asociarse a algún titular y por tal no permite la identificación del mismo, a menos que sea sometido al procedimiento estipulado en las Políticas de Privacidad para tener la certeza del titular.<br>
+        <br>
+        <strong>Transferencia de Datos</strong><br>
+        El Responsable podrá transferir los datos personales del titular a un tercero nacional que se desempeñe como Gestor de Cobro o pertenezca al Sector de Cobranza, Empresas que se desempeñen de Repartidoras de Productos, empresas que venden los productos mediante la página web, o filiales y empresas miembros del grupo del Responsable, sociedades controladas, subsidiarias o afiliadas de la matriz del Responsable, siempre y cuando cumpla con las Finalidades de exigir el cumplimiento de obligaciones y de pago, así como el cumplimiento de la relación jurídica que señala el presente Aviso de Privacidad Integral de conformidad con el artículo 36 de la Ley de Protección de Datos Personales en Posesión de Particulares.<br>
+        <br>
+        En virtud que la transferencia se realiza en virtud de un contrato celebrado o por celebrar en interés del titular, así como para el mantenimiento o cumplimiento de la relación jurídica entre el Titular y el Responsable, no es necesario que el Responsable recabe el Consentimiento del Titular en términos del artículo 37 de la Ley de Protección de Datos Personales en Posesión de Particulares.<br>
+        <br>
+        <strong>Límite de uso o divulgación de Datos Personales</strong><br>
+        Para que el Titular ejerza su derecho de limitar el uso o divulgación de los datos personales, pero con intención de continuar usando de los servicios que presta el Responsable, el usuario debe de manifestar mediante un escrito al siguiente correo electrónico {{correov}}, dicho escrito debe contener lo siguiente:<br>
+        <br>
+        El nombre del titular y correo electrónico donde reciba la respuesta.<br>
+        Dirigida al Responsable y el Área de Privacidad Responsable el Responsable.<br>
+        Registro de cliente o cuenta con el Responsable el Responsable para acreditar su identidad o la relación que sostiene con el Responsable.<br>
+        La descripción clara y precisa de los datos que desea limitar de su uso o divulgación.<br>
+        El Responsable gozará de un plazo de 20 días hábiles para contestar y en su caso ejecutar la limitación de uso, en dicha respuesta, dará la resolución y la posibilidad de realizar lo solicitado en el Escrito, sin perjuicio de la posibilidad del ejercicio de sus demás derechos.<br>
+        <br>
+        <strong>Ejercicio de Derechos ARCO</strong><br>
+        El Titular tiene derecho, de propia persona o a través de un Representante, de solicitar al Responsable, en cualquier momento el Acceso, Rectificación, Cancelación u Oposición, respecto de los datos personales que trate el Responsable.<br>
+        <br>
+        El Procedimiento de Derechos Arco es el siguiente:<br>
+        <br>
+        El titular debe enviar por correo electrónico una Solicitud en escrito libre con los siguientes Requisitos:<br>
+        <br>
+        El nombre del titular, dirección y correo electrónico para comunicarle la respuesta a su solicitud.<br>
+        Los documentos que acrediten la identidad que sólo se aceptarán credencial para votar, pasaporte, Tarjeta Migratoria o, en su caso, la representación legal del titular. Las Identificaciones deben de ser Oficiales.<br>
+        La descripción clara y precisa de los datos personales respecto de los que se busca ejercer alguno de los derechos de acceso, rectificación, cancelación u oposición a los mismos.<br>
+        En su caso, las modificaciones a realizarse y aportar la documentación que sustente su petición.<br>
+        Que la carta esté dirigida el Responsable.<br>
+        La Solicitud será enviada al Departamento de Datos Personales a través del correo electrónico {{correov}} y de forma interna se le hará llegar a la persona que recibe y contesta estas solicitudes, en un horario de 8:00 AM A 6:00 PM, de LUNES A SÁBADO.<br>
+        <br>
+        El Responsable comunicará al Titular, en un plazo de veinte días hábiles contados desde la fecha en que se recibió la solicitud de acceso, rectificación, cancelación u oposición, la determinación adoptada.<br>
+        <br>
+        El momento en que el Responsable recibe la solicitud es aquel en que haya entrado en nuestro servidor, contestando el mismo con un Acuse de Recibo.<br>
+        <br>
+        Una vez que haya sido enviada la contestación en el plazo señalado, el Responsable tendrá 15 días hábiles para ejecutar el Acceso, Rectificación, Cancelación u Oposición de los datos personales conforme a la solicitud.<br>
+        <br>
+        La respuesta, y en su caso, envío de la información será mediante correo electrónico. En caso que así lo decida el titular y que proceda, la información será enviada a la dirección del titular, siempre y cuando este lo solicite y pague los justificados o justificables de envío o con el costo de reproducción en copias u otros formatos.<br>
+        <br>
+        En caso que falte alguno de los elementos o la contestación sean en un sentido diferente al de recibo, el Usuario deberá de ingresar de nuevo su solicitud con los datos faltantes, estando sometido a lo señalado en el presente título.<br>
+        <br>
+        El Titular deberá cubrir los gastos justificados de envío o con el costo de reproducción en copias u otros formatos. Dependiendo de la información, sea electrónica o física la entrega de la información, el Responsable necesitará un domicilio para enviar la información.<br>
+        <br>
+        Cuando los datos hayan dejado de ser necesarios para el cumplimiento de las finalidades previstas por este aviso de privacidad y las disposiciones legales aplicables, deberán ser cancelados, bloqueados y suprimidos por ministerio de Ley.<br>
+        <br>
+        El Responsable podrá negar el Acceso, Rectificación, Cancelación u Posición a los datos personales, de conformidad a los supuestos señalados en el artículo 34 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.<br>
+        <br>
+        La Solicitud no será válida ante la omisión de lo señalado anteriormente.<br>
+        <br>
+        En caso de haber solicitado el derecho de Oposición al tratamiento de Datos Personales, el Responsable el Responsable considerará lo siguiente:<br>
+        <br>
+        Exista causa legítima y su situación específica así lo requiera, lo cual debe justificar que aun siendo lícito el tratamiento, el mismo debe cesar para evitar que su persistencia cause un perjuicio al titular.<br>
+        Requiera manifestar su oposición para el tratamiento de sus datos personales a fin de que no se lleve a cabo el tratamiento para fines específicos.<br>
+        Que el tratamiento no sea necesario para el cumplimiento de una obligación legal impuesta al responsable.<br>
+        En caso de haber ejercido el derecho de Oposición al tratamiento de los Datos Personales el Responsable mandará a un Listado de Exclusión los Datos Personales de conformidad con la Ley.<br>
+        <br>
+        <strong>Procedimientos para bloqueo y supresión de los datos personales.</strong><br>
+        Una vez que los datos hayan sido cancelados, el Responsable conservará un mes más los datos personales del Titular, para fines de aclaraciones y preparación para la supresión. Una vez vencido este plazo, el Responsable suprimirá de manera definitiva los datos personales del titular, no teniendo oportunidad de localización ni contacto con el titular, siendo eliminados de la base de datos y desecho todo expediente relacionado con el titular. Si el titular llegare a realizar otro acto con el Responsable, deberá de iniciarlo como si la relación nunca hubiera existido.
+        <br>
+        Lo anterior, observando lo señalado en las Políticas de Privacidad para efectos de conservar información por ministerio de ley o de autoridad.<br>
+        <br>
+        Los datos personales que hayan sido cumplidos sus fines, pero que no puedan ser cancelados y suprimidos por ministerio de ley o contractual, serán bloqueados de los fines a los que eran sometidos, hasta que se pueda suprimir. Durante dicho periodo, los datos personales no podrán ser objeto de tratamiento.<br>
+        <br>
+        Uso de Cookies o cualquier tecnología para recabar información.<br>
+        <br>
+        El Usuario de la Página de Internet del Responsable conoce y acepta que el Responsable podrá utilizar un sistema de seguimiento mediante la utilización de cookies (las “Cookies”).<br>
+        <br>
+        Las Cookies son archivos de datos que se almacenan en el disco duro del equipo de cómputo o del dispositivo de comunicaciones electrónicas de un usuario al navegar en un sitio de Internet, el cual permite intercambiar información de estado entre dicho sitio y el navegador del usuario. La información de estado puede revelar medios de identificación de sesión, autenticación o preferencias del usuario, así como cualquier dato almacenado por el navegador respecto al sitio de Internet. Las cookies no pueden utilizarse para obtener datos de su disco duro, dirección de correo electrónico o cualquier otra información privada, sino únicamente para recopilar información sobre el comportamiento del usuario al visitar el sitio web. Las Cookies se utilizan con el fin de conocer los intereses, el comportamiento y la demografía de quienes visitan o son visitantes de la Página de Internet y de esa forma, comprender mejor sus necesidades e intereses y darles un mejor servicio o proveerle información relacionada.<br>
+        <br>
+        La instalación, permanencia y existencia de las Cookies en el computador del Usuario depende de su exclusiva voluntad y puede ser eliminada de su computador cuando así lo desee. Para saber cómo quitar las Cookies del sistema es necesario revisar la sección Ayuda (Help) del navegador o Selecciona Configuración-Mostrar opciones avanzadas-“Privacidad”- Configuración de contenido-no permitir que se guarden datos de los sitios-Listo.<br>
+        <br>
+        La Empresa también podrá recabar su dirección de IP (Internet Protocol) para ayudar a diagnosticar problemas con nuestro servidor, y para administrar la Página. Una dirección de IP es un número que se le asigna a su computadora cuando usa Internet. Su dirección de IP también es utilizada para ayudar a identificarle dentro de una sesión particular y para recolectar información demográfica general.<br>
+        <br>
+        Hacemos uso de la tecnología push a través de la aplicación de la Empresa que se usa para enviar notificaciones con autorización previa del usuario, este medio de comunicación no tiene ningún tipo de acceso a otras funciones o información del equipo con el que se conecta al sitio.<br>
+        <br>
+        La empresa también utiliza Web Beacons al momento en que el usuario está utilizando la Página, los Web beacons son imágenes visibles u ocultas insertadas dentro de un sitio Web, que se utiliza para monitorear el comportamiento del usuario en estos medios.<br>
+        <br>
+        <strong>Candado de seguridad SSL</strong><br>
+        El empleo de Candado de seguridad SSL en {{sitio}} protege al usuario contra factores externos que puedan afectar el uso del “sitio web” si como la protección de los datos introducidos dentro del proceso de compra y la creación de usuarios.<br>
+        <br>
+        <strong>Confidencialidad de la información</strong><br>
+        Los datos de los Titulares serán suministrados únicamente por el Responsable en las formas establecidas en este Aviso de Privacidad. El Responsable hará todo lo que esté a su alcance para proteger la privacidad de la información. Puede suceder que en virtud de órdenes judiciales, o de regulaciones legales, el Responsable se vea compelido a revelar información a las autoridades o terceras partes bajo ciertas circunstancias, o bien en casos que terceras partes puedan interceptar o acceder a cierta información o transmisiones de datos en cuyo caso el Responsable no responderá por la información que sea revelada. En estos casos, el Responsable notificará al Titular sobre ésta situación.<br>
+        <br>
+        No asumimos ninguna obligación de mantener confidencial cualquier otra información que el Titular proporcione a través de boletines y pláticas en línea.<br>
+        <br>
+        El Responsable tomará todas las medidas posibles para mantener la confidencialidad y la seguridad descrita anteriormente, pero no responderá por los daños o perjuicios que pudieran derivarse de la violación de esas medidas por parte de terceros que utilicen las redes públicas o el Internet, alterando los sistemas de seguridad para obtener acceso a la información de los Titulares.<br>
+        <br>
+        Las vulneraciones de seguridad ocurridas en cualquier fase del tratamiento que afecten de forma significativa los derechos patrimoniales o morales de los Titulares, serán informadas de forma inmediata por el Responsable al Titular, a fin que este último pueda tomar las medidas correspondientes a la defensa de sus derechos.<br>
+        <br>
+        El Responsable ha implementado diversas técnicas de seguridad para proteger los datos proporcionados por el Titular, en contra de accesos no autorizados por visitantes de la Página de Internet o a la Base de Datos del Responsable, ya sea dentro o fuera del Responsable. Uno de los factores que protege la seguridad de los datos, es que nuestro sistema ha implementado un candado de seguridad SSL, lo cual hace imposible que una persona ajena a la relación entre el Titular y el Responsable, tenga acceso o adquiera los datos de manera ilegal.<br>
+        <br>
+        <strong>Área Interna de Privacidad</strong><br>
+        El titular, podrá ejercer sus derechos y realizar las consultas señaladas en el presente documento, así como en la ley, a través del área de Privacidad del Responsable a la cual se le deben de dirigir las Solicitudes señaladas en el presente documento y en la Ley.
+        <br>
+        El Usuario tendrá que utilizar el correo electrónico {{correov}} para contactar el área de Privacidad, el titular del Área de Privacidad es {{titular}}.<br>
+        <br>
+        <strong>Consentimiento</strong><br>
+        El Titular manifiesta que al uso de la página, la proporción de sus Datos personales y/o poseer una cuenta o ser usuario, o la realización directa de origen contractual o extra contractual con el Responsable, ya ha leído el presente aviso y consiente lo estipulado en el mismo.<br>
+        <br>
+        El Titular consiente el presente Aviso de Privacidad, de conformidad con la Ley de Protección de Datos Personales en Posesión de los Particulares,no oponiéndose al Aviso de Privacidad.<br>
+        <br>
+        <strong>Revocación del consentimiento.</strong><br>
+        El consentimiento podrá ser revocado en cualquier momento sin que se le atribuyan efectos retroactivos. Para revocar el consentimiento el Titular debe de enviar una Solicitud, la cual, debe ser por escrito con los siguientes requisitos:<br>
+        <br>
+        Los documentos que acrediten la identidad que sólo se aceptarán credencial para votar, pasaporte, cartilla de servicio militar, Tarjeta Migratoria, adjunto como imagen al correo por los dos lados que sea claro y legible.<br>
+        En caso que se haga mediante representante, también se presentará identificación del representante y carta poder firmada por dos testigos para actuar en nombre del titular, adjuntando una imagen de la carta poder y de la identificación que sean legibles y claras.<br>
+        La relación que sostuvo o sostiene con el Responsable.<br>
+        Que la carta esté dirigida al Responsable y al Área de Privacidad del Responsable.<br>
+        El Responsable emitirá una respuesta en la cual confirmará la revocación del consentimiento, o en su caso, señalará el razonamiento dependiendo del caso en concreto, contando el Responsable con 15 días para emitir esta respuesta. Los plazos serán contados a partir del momento en que el correo entra a nuestro servidor, emitiendo el Responsable el respectivo Acuse de Recibido de Solicitud.<br>
+        <br>
+        Cualquier Solicitud ulterior a la mencionada en el párrafo anterior tendrá el mismo efecto que una de inicio, estando el Titular y el Responsable obligadas a los mismos plazos señalados anteriormente.<br>
+        <br>
+        La Solicitud no será válida ante la omisión de lo señalado anteriormente.<br>
+        <br>
+        <strong>Protectora de Datos Personales</strong><br>
+        Para cualquier duda o información adicional, así como ejercer distintos tipos de derechos y procedimientos además de los señalados en el presente, el Usuario puede contactar al Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales “INAI” al Teléfono 01800-835-4324 (lada sin costo) por la página de Internet www.inai.org.mx<br>
+        <br>
+        <strong>Comunicación de modificaciones al Aviso de Privacidad</strong><br>
+        Cualquier cambio, actualización, corrección y modificación al presente Aviso de Privacidad se hará saber a través del sitio web ({{sitio}}) y vía e-mail que los titulares hayan proporcionado en el proceso de compra o a través de la creación de usuario en el sitio web como medio de comunicación.<br>
+        <br>
+        Fecha de última actualización junio 2017.<br>
+              </p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <!-- Seguna columna empieza aqui -->
+    <h3 style="text-align: center;">Terminos y Condiciones</h3><br>
+    <div class="container" style="user-select: all;">
+                <p>
+          {{titular}} en lo sucesivo el "Responsable", con nombre comercial {{empresa}}, en lo sucesivo la “Empresa”, con domicilio en {{direccion}}, {{municipio}}, {{estado}}, {{pais}}, C.P {{cp}}, expide los siguientes Términos y Condiciones para que a través de sus diversos medios electrónicos se comercialicen y se oferten diversos productos al público en general, identificados de manera individual como “Usuario”.<br>
+          <br>
+          Página de Internet de la Empresa: Es el sitio Web de {{empresa}}, bajo la denominación {{sitio}}, en el cual {{empresa}} publica Ofertas de Venta, en donde se puede registrar el usuario para adquirir los Productos publicados, realizar Pedidos, ponerse en contacto con {{empresa}} o en servicio al Cliente a través del correo electrónico {{correov}}, entre otros.<br>
+          <br>
+          <strong>Declaraciones:</strong><br>
+          {{empresa}} declara que es una Empresa legalmente constituida bajo las leyes mexicanas, que tiene todos los permisos necesarios para cumplir su Objeto Social y que no tiene algún tipo de impedimento o limitante para cumplir con el mencionado Objeto, que incluye, la celebración del Contrato.<br>
+          <br>
+          {{empresa}} concede al Usuario una licencia personal limitada, no exclusiva, no transferible, revocable, por plazo indeterminado, conforme a los presentes Términos y Condiciones, para utilizar el Sitio, a fin de avalar, manifestar o interesarse en adquirir y adquirir mediante Oferta de Venta los productos que en la Página se encuentren publicados. La forma de utilizar el Sitio es personal e intransferible.<br>
+          <br>
+          {{empresa}} declara ser propietaria de los Bienes o Productos que se encuentren en las Ofertas de Venta, además de todos los elementos amparados por normas de propiedad intelectual. Todo lo anterior para efecto del Contrato.<br>
+          <br>
+          {{empresa}} declara que el contenido neto del Producto publicado en la Oferta de Venta corresponde a la Calidad, marca y demás elementos que se señalen en la propia Oferta de Venta.<br>
+          <br>
+          {{empresa}} se reserva todos los derechos no expresamente otorgados bajo el presente documento.<br>
+          <br>
+          Este contrato y cualesquiera derechos y licencias otorgadas aquí, no podrán ser transferidos o cedidos por el Usuario pero {{empresa}} si estará en posibilidad de transferirlos o cederlos sin restricción alguna.<br>
+          <br>
+          El Usuario acepta Términos y Condiciones y se obliga a todo lo señalado en los mismos.<br>
+          <br>
+          El Usuario está de acuerdo en que las exclusiones de garantía y limitaciones de responsabilidad establecidas con anterioridad son elementos fundamentales de la base de estos Términos y Condiciones.<br>
+          <br>
+          El Usuario está consciente de que el tráfico de datos que proporciona acceso al Sitio es apoyado por un servicio prestado por la operadora de servicios de telecomunicaciones seleccionada y contratada por el Usuario y que dicha contratación es totalmente independiente del Sitio.<br>
+          <br>
+          El Usuario reconoce que las comisiones cobradas por la operadora de servicios de telecomunicaciones de su elección y los impuestos aplicables pueden afectar el tráfico de datos necesarios para eventuales descargas y anuncios de un tercero en el dispositivo.<br>
+          <br>
+          El Usuario declara y reconoce que el download de cualquier contenido del Sitio no le confiere la propiedad sobre cualesquiera marcas exhibidas en el Sitio.<br>
+          <br>
+          <strong>Proceso de Compra<br>
+          Contrato</strong><br>
+          Es aquel que la Empresa le transmite la propiedad de un bien mueble al Usuario con Registro que acepta una Oferta de Venta, creando así un pedido y pagando a cambio un precio cierto en moneda de curso legal de los Estados Unidos Mexicanos. Dicho contrato se someterá a los presentes Términos y Condiciones.<br>
+          <br>
+          <strong>Ofertas de Venta</strong><br>
+          Es toda aquella publicación de un Producto en la Página de la Empresa, que contenga un precio y descripción del Producto que puede constar de clasificación, denominación, serie, modelo, color, etc. El precio señalado en la Oferta de Venta no es negociable, y se le respetará el descuento o quita señalada en la propia Oferta de Venta.<br>
+          <br>
+          El Precio excluye impuestos, gastos de envío, seguro e instalación, salvo que se señale explícitamente lo contrario.<br>
+          <br>
+          <strong>Pedido</strong><br>
+          Es la solicitud que hace el Usuario para la adquisición de un Producto en respuesta de una Oferta de Venta. El contrato se perfeccionará cuando el Usuario reciba, mediante cualquier medio la Confirmación del Pedido mismo que será emitido por la Empresa. En el caso que exista cualquier tipo de error en la Confirmación de Pedido, el Usuario deberá notificar a la Empresa, en el correo denominado {{correov}}, de dicho error mediante una notificación por escrito.<br>
+          <br>
+          <strong>Forma de Pago</strong><br>
+          Una vez que se vaya a efectuar el pago del producto seleccionado, el Usuario deberá confirmar el monto a pagar para cubrir el costo del mismo; Los pagos pueden realizarse por diferentes medios ya sea Tarjeta Bancaria, (crédito o débito), pago en efectivo (será aplicable únicamente a las ciudades señalas en la Página de Internet), depósito o Transferencia ante cualquier Institución, o algún otro medio que la Empresa se reserve a publicar. La Forma de Pago se realizará después de Recibir la Confirmación de Pedido.<br>
+          <br>
+          Si el pago se realiza mediante depósito o transferencia ante cualquier Institución Bancaria, el usuario deberá mandar el comprobante de pago a {{correov}} para poder liberar su compra.<br>
+          <br>
+          El Usuario deberá notificar a la Empresa cualquier cargo indebido o fraudulento en la tarjeta o cuenta bancaria utilizada para las compras, mediante correo dirigido a {{correov}}, en el menor plazo de tiempo posible para que la Empresa realice las gestiones oportunas, así como del extravío, pérdida, hurto o robo, inmediatamente después de tener conocimiento del hecho.<br>
+          <br>
+          <strong>Método de Envío</strong><br>
+          El Usuario deberá cubrir los costos de transporte y envío de los productos, salvo que se señale explícitamente lo contrario.<br>
+          <br>
+          El Envío Gratis es aplicable únicamente en las compras que ascienden al monto que la Empresa establezca en la Página de Internet.<br>
+          <br>
+          Se le informará al Usuario previamente el precio, fecha aproximada de entrega, costos de seguro y flete, este se erogará al momento de confirmar el pedido.<br>
+          <br>
+          <strong>Entrega del Producto</strong><br>
+          La entrega se realizará en el domicilio señalado por el Usuario en el Portal de la Cuenta o en una dirección diferente proporcionada por el Usuario, que deberá realizarse al momento de confirmar el Pedido.<br>
+          <br>
+          Las entregas pueden efectuarse por partes, dentro del plazo señalado al momento de la Confirmación del Pedido, dicho plazo empezará a correr una vez que sea aprobado el pago; el usuario podrá revisar el estatus de entrega de su producto en el portal.<br>
+          <br>
+          En caso que el Producto no sea entregado en el plazo fijado, no se le podrá reclamar ningún tipo de interés a la Empresa, el Usuario podrá contactar al Centro de Atención a Clientes de la Empresa, donde se expedirá un documento que señale el Estado de Envío y en el cual se especifique las razones del retraso.<br>
+          <br>
+          <strong>Recepción del Producto y Devolución</strong><br>
+          Al momento de Recibir el Producto, en el domicilio señalado, el Usuario está obligado a revisar el Producto. En caso de algún desperfecto el Usuario podrá ejecutar los medios señalados en el apartado de Devolución o Garantías de los presentes Términos y Condiciones.<br>
+          <br>
+          La Devolución del Producto procederá cuando el producto no exceda más de treinta días desde la Entrega del Producto, así como cuando la devolución derive de situaciones convencionales, incluso es válido en caso que el Producto no sea de las medidas, el color, material, etc., que el Usuario deseaba.<br>
+          <br>
+          El Usuario deberá devolver el Producto en sus condiciones originales, con su empaquetado, acuse de recibido del Producto, número de autorización de devolución (o guía) y factura de compra. La Empresa remplazará el bien en un plazo razonable, en el entendido de la sujeción a factores independientes de la Empresa como son entrega por parte de la empresa de paquetería, disponibilidad del producto a sustituir o disponibilidad de las piezas del mismo. La Empresa se reserva el derecho a entregar un producto distinto, del mismo valor y que cumpla las mismas funciones que el solicitado, a causa de la imposible reparación del mismo.<br>
+          <br>
+          Existen ciertos productos que por su naturaleza no son aplicables a la devolución, señalados de manera expresa en la descripción del producto.<br>
+          <br>
+          <strong>Promociones y Descuentos</strong><br>
+          Son aquellas quitas sobre el precio del producto que se establezcan en la Página de Internet, las cuales estarán sujetas a las condiciones, restricciones, el plazo de duración o volumen de los productos que se encontraran en los diferentes anuncios publicados en la Página de Internet.<br>
+          <br>
+          <strong>Restricciones:</strong><br>
+          Cualquier transgresión a los presentes Términos y Condiciones por parte del Usuario generarán el derecho en favor de {{empresa}} de, en cualquier momento y sin necesidad de notificación previa de ningún tipo, suspender o terminar la prestación de los servicios y/o de retirarle o denegarle el acceso al Sitio al Usuario trasgresor, así como quitarle o sacarlo del Registro.<br>
+          <br>
+          El Sitio puede ser utilizado únicamente con fines lícitos.<br>
+          <br>
+          Se encuentra terminantemente prohibido cualquier tipo de copia, distribución, transmisión, retransmisión, publicación, impresión, difusión y/o explotación comercial del material y/o contenido puesto a disposición del público a través de este Sitio, sin el previo consentimiento expreso y por escrito de {{empresa}} o, en su caso, del titular de los derechos de propiedad correspondientes. El incumplimiento de lo mencionado sujetará al infractor a todos los reclamos civiles y sanciones penales que pudieran corresponder.<br>
+          <br>
+          <strong>LOS PADRES O TUTORES DE MENORES DE EDAD SERÁN RESPONSABLES POR LOS ACTOS POR ELLOS REALIZADOS SEGÚN LO DISPUESTO POR ESTOS TÉRMINOS Y CONDICIONES, INCLUYENDO LOS DAÑOS CAUSADOS A TERCEROS, ACCIONES REALIZADAS POR ELLOS Y QUE ESTÉN PROHIBIDAS POR LEY Y POR LAS DISPOSICIONES DE ESTE ACUERDO, SIN PERJUICIO DE LA RESPONSABILIDAD DEL USUARIO, SIEMPRE QUE ÉSTE NO FUESE PADRE O REPRESENTANTE LEGAL DEL MENOR INFRACTOR.</strong><br>
+          <br>
+          Al momento del Registro de Usuario no se aceptarán y podrán ser cancelados en cualquier momento, direcciones de correo electrónico (e-mails) o cualquier dato que contengan expresiones o conjuntos gráficos-denominativos que ya hayan sido escogidos anteriormente por otro Usuario o, que de alguna otra forma, fuesen injuriosos, altisonantes, coincidentes con marcas, nombres comerciales, anuncios de establecimientos, razones sociales de empresas, expresiones publicitarias, nombres y seudónimos de personas de relevancia pública, famosos o registrados por terceros, cuyo uso no esté autorizado o que fuese en general, contrario a la ley o a las exigencias morales y de buenas costumbres generalmente aceptadas, así como expresiones que pudieran inducir a otras personas por error, quedando claro que el Usuario responderá por el uso indebido tanto en el ámbito civil como penal, si aplicase.<br>
+          <br>
+          El Usuario no deberá hacer Upload, publicar o de cualquier otra forma disponer en el Sitio de cualquier material protegido por derechos de autor, registro de marcas o cualquier otro derecho de propiedad intelectual sin previa y expresa autorización del titular del mencionado derecho.<br>
+          <br>
+          <strong>Terminación del Contrato</strong><br>
+          El Contrato que se perfecciona al contestar una oferta de venta termina en el momento que las partes cumplen con sus obligaciones.<br>
+          <br>
+          La Empresa podrá Terminar anticipadamente el Contrato si:<br>
+          <br>
+          El Precio no es pagado puntualmente, a cuyo efecto las partes pactan expresamente que la falta de pago total o parcial producirá la rescisión de pleno derecho.<br>
+          El Usuario incumple con cualquiera de las obligaciones asumidas en este documento.<br>
+          Así lo convengan sus intereses cumpliendo previamente con sus obligaciones o indemnizarlo por dejar de hacerlo.<br>
+          La Empresa podrá optar por exigir la ejecución de su obligación de pagar el precio o rescindir el Contrato y la indemnización, además podrá exigir resarcimiento de daños y perjuicios.<br>
+          <strong>Vigencia de los Términos y Condiciones</strong><br>
+          La Empresa, así como el Usuario, reconocen que los Términos y Condiciones son de vigencia ilimitada.<br>
+          <br>
+          {{empresa}} se reserva el derecho de efectuar alteraciones al presente documento sin necesidad de previo aviso. Por lo anterior {{empresa}} recomienda al Usuario que vuelva a leer con regularidad este documento, de forma que se mantenga siempre informado sobre eventuales modificaciones. Las alteraciones al Contrato se volverán efectivas inmediatamente después de su publicación en el Sitio.<br>
+          <br>
+          Una vez realizadas las modificaciones, se presumirá que el Usuario que continúe usando el Sitio tendrá pleno conocimiento, habrá leído y consentido los Términos y Condiciones reformados.<br>
+          <br>
+          {{empresa}} podrá rescindir unilateralmente el presente instrumento, mediante previa notificación al Usuario, en el plazo de 1 (un) día, la notificación puede ser, a elección de la Empresa, en el Sitio o por escrito.<br>
+          <br>
+          Si {{empresa}} rescinde los Términos y Condiciones o cierra la Página, será con previo análisis del Estado de los Contratos, por tal {{empresa}} no estará obligada a indemnizar al Usuario.<br>
+          <br>
+          Jurisdicción: En caso que exista conflicto en relación al Contrato, {{empresa}} está en la total disposición de llegar a un acuerdo con el Usuario para la resolución del Conflicto. Si no existe dicho acuerdo, y en los demás casos no relacionados con el Contrato, se llevará la instancia correspondiente ante la Procuraduría del Consumidor o bien ante los Tribunales de la Ciudad de México.<br>
+          <br>
+          Interpretación: Para todo lo relativo a la interpretación de los presentes términos y condiciones se estará a lo dispuesto a los mismos, al glosario que como usuario puedes consultar, al aviso de privacidad, así como a todas las disposiciones que contengan los presentes términos y condiciones y a nuestra legislación mexicana vigente.<br>
+          <br>
+          Confidencialidad de la Información: Los datos de los Usuarios serán administrados únicamente por la Empresa en las formas establecidas en este Aviso de Privacidad. La Empresa hará todo lo que esté a su alcance para proteger la privacidad de la información. Puede suceder que en virtud de órdenes judiciales, o de regulaciones legales, la Empresa se vea compelida a revelar información a las autoridades o terceras partes bajo ciertas circunstancias, o bien en casos que terceras partes puedan interceptar o acceder a cierta información o transmisiones de datos en cuyo caso la Empresa no responderá por la información que sea revelada. En estos casos, la Empresa notificará al Usuario sobre ésta situación.<br>
+          <br>
+          No asumimos ninguna obligación de mantener confidencial cualquier otra información que el Usuario proporcione a través de boletines y pláticas en línea (chats), así como la información que obtenga a través de los cookies, información que no haya sido directamente entregada a la Empresa.<br>
+          <br>
+          Se debe aclarar que NO se vende, regala, facilita ni alquila la información del Usuario a ningún tercero ni somos dueños de la misma.<br>
+          <br>
+          La Empresa tomará todas las medidas posibles para mantener la confidencialidad y la seguridad descritas anteriormente, pero no responderá por los daños o perjuicios que pudieran derivarse de la violación de esas medidas por parte de terceros que utilicen las redes públicas o el Internet, alterando los sistemas de seguridad para obtener acceso a la información de los Usuarios.<br>
+          <br>
+          Las vulneraciones de seguridad ocurridas en cualquier fase del tratamiento que afecten de forma significativa los derechos patrimoniales o morales de los Titulares, serán informadas de forma inmediata por la Empresa al Usuario, a fin que este último pueda tomar las medidas correspondientes a la defensa de sus derechos.<br>
+          <br>
+          Para mayor información, sírvase de consultar el Aviso de Privacidad que se encuentra en la Página Web de la Empresa.<br>
+          <br>
+          <strong>Acceso y uso del Sitio</strong><br>
+          Tanto el Sitio como cualesquiera otros Sitios de cualquier otra forma disponibles en el Sitio (en lo sucesivo los “Micro-sitios”) son propiedad privada y cualesquiera interacciones deben realizarse de acuerdo con el presente documento.<br>
+          <br>
+          Sin perjuicio de las demás obligaciones del Usuario establecidas según se establece en éstos Términos y Condiciones, el Usuario se obliga a:<br>
+          <br>
+          No utilizar los contenidos y productos del Sitio con la finalidad de faltar a la ley, la moral, las buenas costumbres, las reglas y derechos de propiedad intelectual, la dignidad, la vida privada, la imagen, la intimidad personal y familiar.<br>
+          Observar los más elevados patrones éticos y morales vigentes en Internet y las leyes nacionales e internacionales aplicables.<br>
+          No utilizar el Registro de Usuario, contenidos y productos proporcionados conforme a éstos Términos y Condiciones para transmitir o divulgar material ilegal, difamatorio, que viole, o sea abusivo, amenazador, obsceno, perjudicial, vulgar, injurioso o de cualquier otra forma censurable.<br>
+          No enviar mensajes que no hubiesen sido solicitados, reconocidos como spam, junk mail o cadenas de correspondencia (chainletters).<br>
+          No utilizar los Servicios tipo contenidos y los productos proporcionados conforme éstos Términos y Condiciones para enviar/divulgar cualquier tipo de virus o archivos que contengan cualquier de virus o que pudiesen causar daños a su destinatario o a terceros.<br>
+          Cumplir con todas las leyes aplicables con relación a la transmisión de datos desde México o del territorio en que el Usuario resida.<br>
+          No obtener o intentar obtener acceso a otros sistemas de redes o de computadoras conectados a los contenidos y productos del Sitio.<br>
+          Responsabilizarse íntegramente del contenido de los correos electrónicos que se van a retransmitir así como del contenido e información que se pusieran a disposición en las Promociones del Sitio.<br>
+          No interferir o interrumpir los Servicios o los servidores o redes conectados a los Servicios, contenidos y productos abastecidos por medio del Sitio o de los Micro-sitios.<br>
+          Cumplir con los procedimientos, normas y reglamentos aplicables a los contenidos y productos del Sitio, divulgados en las páginas y enlaces de cada contenido de los Micro-sitios.<br>
+          El Usuario no deberá enviar o transmitir por medio del Sitio cualquier contenido o información que contenga cualquier propaganda o propuesta relacionada con cualesquiera productos y/o servicios.<br>
+          El Usuario no podrá divulgar o hacer cualquier oferta comercial, religiosa, política o cualquier otra oferta incluso sin fines comerciales, incluyendo pero sin limitar las ofertas a los Usuarios para que se conviertan en Usuarios de otros servicios que de cualquier manera pudiesen competir con los Servicios prestados por la Empresa.<br>
+          <strong>Políticas de Facturación</strong><br>
+          Para solicitar su facturación deberá de hacerlo dentro de un plazo no mayor a 5 días hábiles a partir del momento en que recibe el correo electrónico que indica que su mercancía fue embarcada. En el caso de compras vía COD ("Cash on Delivery") tendrá el mismo plazo a partir de que recibimos su pago.<br>
+          Deberá enviar una solicitud de facturación al correo de {{correov}} dentro del mes en curso en que se realizó la compra. No procederán solicitudes de factura para compras de meses anteriores.<br>
+          Al solicitar su factura será necesario que tenga a la mano y proporcione los siguientes requisitos Fiscales:<br>
+          RFC con Homoclave.<br>
+          Nombre completo o razón social.<br>
+          Domicilio Fiscal completo incluyendo calle, colonia, delegación o municipio, estado y código postal<br>
+          Forma en la que realizo el Pago ya se efectivo, transferencias electrónicas de fondos, cheques nominativos o tarjetas de débito, de crédito, de servicio o las denominadas monederos electrónicos que autorice el Servicio de Administración Tributaria.<br>
+          Indicar al menos los últimos 4 dígitos de su cuenta de pago.<br>
+          Deberá proporcionar su e-mail donde le llegará su factura, en un plazo no mayor a 5 días hábiles.<br>
+          Cualquier conducta del Usuario que, a criterio exclusivo de la Empresa, pudiera restringir o inhibir el uso del Sitio o de los Micro-sitios por otros Usuarios, terceros, o {{empresa}} queda expresamente prohibida.<br>
+          <br>
+          <strong>Políticas de devoluciones</strong><br>
+          <br>
+          {{empresa}} ofrece un sistema de devoluciones para sus clientes puedan hacer valido en los siguientes casos:<br>
+          <br>
+                1. El producto recibido cuente con imperfecto de fábrica el cual impida el uso y funcionamiento óptimo del mismo<br>
+                2. El producto recibido se encuentre en mal estado físico o alterado en comparación al ofrecido en la imagen de internet sobre el producto comprado en {{sitio}}<br>
+                3. El empaque del producto se encuentre en mal estado<br>
+                4. El empaque del producto se encuentre abierto y/o manipulado<br>
+                5. El producto recibido sea diferente al comprado en {{sitio}} en tanto a modelo o versión del mismo. Esto no aplica si el producto es de diferente color.<br>
+          Todos los clientes tienen acceso al programa de devoluciones siempre y cuando:<br>
+          <br>
+                Este registrado en el sitio web con sus datos requeridos por la plataforma<br>
+                Cuenten con nota, factura u orden del pedido proveniente de {{sitio}}<br>
+                El producto no muestre marcas de uso que pongan en duda o evaluación de si el producto contaba con cierta falla o daño ocasionado por el cliente al usarlo de manera inapropiada.<br>
+                El cliente cuente con el empaque original del producto<br>
+                El producto este en su totalidad (piezas y partes incluidas)<br>
+                La compra del producto haya sido en un lapso no mayor a 30 días naturales<br>
+          El proceso para iniciar la devolución del producto es el siguiente:<br>
+          <br>
+                1. Informar en {{sitio}} mediante el panel de “Historial de pedidos” que se está solicitando devolución de una compra o producto<br>
+                2. {{empresa}} verificará la solicitud y se comunicará podrá comunicarse con el cliente para pedir detalles de la devolución<br>
+                3. En caso de no aprobarse la devolución {{empresa}} se reserva el derecho a rechazar la solicitud informándole la razón por la cual se rechaza. Esta razón está sustentada bajo la política de devoluciones mencionada en este documento.<br>
+                4. En caso de aprobarse la solicitud de devolución. El cliente deberá de hacer el envío del producto en su empaque original dentro de una caja extra hacia la dirección:<br>
+          {{direccion}} C.P. {{cp}}, {{municipio}}, {{estado}}, {{pais}}.<br>
+          <br>
+          DIRIGIENDO EL ENVIO A {{titular}}<br>
+          <br>
+          Una vez recibido el paquete se evaluará el producto para una segunda validación de la solicitud de la devolución. Si esta segunda revisión es aprobatoria se procederá a realizar el envío del producto, de lo contrario se devolverá el envío de vuelta al cliente explicándole los motivos de la declinación de la solicitud.<br>
+          <br>
+          Fecha de última actualización Agosto 2018.<br>
+          <br>
+                </p>
+    </div>
+    </div>
+    <footer>
+    <p>Sitio Desarrollado Por: <a href="https://www.linkedin.com/in/aldo-alexis-l%C3%B3pez-rivera-1a2791178/" target="_blank">Aldo</a></p>
+    </footer>
+</div>
